@@ -481,7 +481,7 @@ Chandigrah
 </ul>
 <ul class="ordr-crt-share">
 <li><button class="add-cart-btn hover-btn"><i class="uil uil-shopping-cart-alt"></i>Add to Cart</button></li>
-<li><button class="order-btn hover-btn">Order Now</button></li>
+<li><asp:Button ID="Button1" class="order-btn hover-btn" runat="server" Text="Order Now" onClick="Button1_Click" /></li>
 </ul>
 </div>
 <div class="pdp-details">
@@ -977,14 +977,6 @@ Gambo Pvt Ltd, Sks Nagar, Near Mbd Mall, Ludhana, 141001
 <img alt="Discover" title="Discover" src="images/footer-icons/pyicon-4.svg">
 </li>
 </ul>
-</div>
-</div>
-<div class="second-row-item-payment">
-<h4>Newsletter</h4>
-<div class="newsletter-input">
-<%--<input id="email" name="email" type="text" placeholder="Email Address" class="form-control input-md" required="">--%>
-   <asp:TextBox ID="TextBox1" name="email" placeholder="Email Address" class="form-control input-md" required="" runat="server"></asp:TextBox>
-<button class="newsletter-btn hover-btn" type="submit"><i class="uil uil-telegram-alt"></i></button>
 </div>
 </div>
 </div>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireupf="true" CodeBehind="bill.aspx.cs" Inherits="SuperMarket_Management_System.bill" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="bill.aspx.cs" Inherits="SuperMarket_Management_System.bill" %>
 
 <!DOCTYPE html>
 

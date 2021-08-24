@@ -147,6 +147,7 @@
     <Content Include="css\step-wizard.css" />
     <Content Include="css\style.css" />
     <Content Include="dashboard_overview.aspx" />
+    <Content Include="feedback.aspx" />
     <Content Include="forgotpassword.aspx" />
     <Content Include="index.aspx" />
     <Content Include="images\about.svg" />
@@ -349,6 +350,13 @@
     </Compile>
     <Compile Include="dashboard_overview.aspx.designer.cs">
       <DependentUpon>dashboard_overview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="forgotpassword.aspx.cs">
       <DependentUpon>forgotpassword.aspx</DependentUpon>

@@ -1,16 +1,15 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="checkout.aspx.cs" Inherits="SuperMarket_Management_System.checkout" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="feedback.aspx.cs" Inherits="SuperMarket_Management_System.feedback" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   
-<meta charset="utf-8"/>
+   <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, shrink-to-fit=9"/>
 <meta name="description" content="Gambo"/>
 <meta name="author" content="Gambo"/>
-<title>Gambo - Checkout</title>
+<title>Gambo - Contact Us</title>
 
 <link rel="icon" type="image/png" href="images/fav.png"/>
 
@@ -28,12 +27,13 @@
 <link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css"/>
 </head>
 <body>
-<form id="form1" runat="server">
+
 <div id="category_model" class="header-cate-model main-gambo-model modal fade" tabindex="-1" role="dialog" aria-modal="false">
 <div class="modal-dialog category-area" role="document">
 <div class="category-area-inner">
 <div class="modal-header">
 <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+ 
 <i class="uil uil-multiply"></i>
 </button>
 </div>
@@ -61,9 +61,57 @@
 <li>
 <a href="#" class="single-cat-item">
 <div class="icon">
+<img src="images/category/icon-3.svg" alt=""/>
+</div>
+<div class="text"> Dairy & Eggs </div>
+</a>
+</li>
+<li>
+<a href="#" class="single-cat-item">
+<div class="icon">
+<img src="images/category/icon-4.svg" alt=""/>
+</div>
+<div class="text"> Beverages </div>
+</a>
+</li>
+<li>
+<a href="#" class="single-cat-item">
+<div class="icon">
+<img src="images/category/icon-5.svg" alt=""/>
+</div>
+<div class="text"> Snacks </div>
+</a>
+</li>
+<li>
+<a href="#" class="single-cat-item">
+<div class="icon">
+<img src="images/category/icon-6.svg" alt=""/>
+</div>
+<div class="text"> Home Care </div>
+</a>
+</li>
+<li>
+<a href="#" class="single-cat-item">
+<div class="icon">
 <img src="images/category/icon-7.svg" alt=""/>
 </div>
 <div class="text"> Noodles & Sauces </div>
+</a>
+</li>
+<li>
+<a href="#" class="single-cat-item">
+<div class="icon">
+<img src="images/category/icon-8.svg" alt=""/>
+</div>
+<div class="text"> Personal Care </div>
+</a>
+</li>
+<li>
+<a href="#" class="single-cat-item">
+<div class="icon">
+<img src="images/category/icon-9.svg" alt=""/>
+</div>
+<div class="text"> Pet Care </div>
 </a>
 </li>
 </ul>
@@ -79,15 +127,18 @@
 <div class="category-area-inner">
 <div class="modal-header">
 <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+           
 <i class="uil uil-multiply"></i>
 </button>
 </div>
 <div class="category-model-content modal-content">
 <div class="search-header">
-
+<div>
 <input type="search" placeholder="Search for products..."/>
+              
 <button type="submit"><i class="uil uil-search"></i></button>
-
+             
+</div>
 </div>
 <div class="search-by-cat">
 <a href="#" class="single-cat">
@@ -97,6 +148,12 @@
 <div class="text">
 Fruits and Vegetables
 </div>
+</a>
+<a href="#" class="single-cat">
+<div class="icon">
+<img src="images/category/icon-5.svg" alt=""/>
+</div>
+<div class="text"> Snacks </div>
 </a>
 <a href="#" class="single-cat">
 <div class="icon">
@@ -115,6 +172,7 @@ Fruits and Vegetables
 <div class="bs-canvas-header side-cart-header p-3 ">
 <div class="d-inline-block  main-cart-title">My Cart <span>(2 Items)</span></div>
 <button type="button" class="bs-canvas-close close" aria-label="Close"><i class="uil uil-multiply"></i></button>
+                  
 </div>
 <div class="bs-canvas-body">
 <div class="cart-top-total">
@@ -139,31 +197,43 @@ Fruits and Vegetables
 <ul class="kggrm-now">
 <li>
 <input type="radio" id="a1" name="cart1"/>
+                      
 <label for="a1">0.50</label>
+                       
 </li>
 <li>
 <input type="radio" id="a2" name="cart1"/>
+                           
 <label for="a2">1kg</label>
+                        
 </li>
 <li>
 <input type="radio" id="a3" name="cart1"/>
+                               
 <label for="a3">2kg</label>
+                              
 </li>
 <li>
 <input type="radio" id="a4" name="cart1"/>
+                                   
 <label for="a4">3kg</label>
+                                  
 </li>
 </ul>
 </div>
 <div class="qty-group">
 <div class="quantity buttons_added">
 <input type="button" value="-" class="minus minus-btn"/>
+                                      
 <input type="number" step="1" name="quantity" value="1" class="input-text qty text"/>
+
 <input type="button" value="+" class="plus plus-btn"/>
+                                      
 </div>
 <div class="cart-item-price">$10 <span>$15</span></div>
 </div>
 <button type="button" class="cart-close-btn"><i class="uil uil-multiply"></i></button>
+                      
 </div>
 </div>
 <div class="cart-item">
@@ -177,23 +247,31 @@ Fruits and Vegetables
 <ul class="kggrm-now">
 <li>
 <input type="radio" id="a5" name="cart2"/>
+                           
 <label for="a5">0.50</label>
+                           
 </li>
 <li>
 <input type="radio" id="a6" name="cart2"/>
+                               
 <label for="a6">1kg</label>
+                               
 </li>
 <li>
 <input type="radio" id="a7" name="cart2"/>
+                                  
 <label for="a7">2kg</label>
+                                   
 </li>
 </ul>
 </div>
 <div class="qty-group">
 <div class="quantity buttons_added">
 <input type="button" value="-" class="minus minus-btn"/>
+                                       
 <input type="number" step="1" name="quantity" value="1" class="input-text qty text"/>
 <input type="button" value="+" class="plus plus-btn"/>
+                                      
 </div>
 <div class="cart-item-price">$24 <span>$30</span></div>
 </div>
@@ -223,11 +301,11 @@ Fruits and Vegetables
 <div class="top-header-group">
 <div class="top-header">
 <div class="res_main_logo">
-<a href="index.aspx"><img src="images/dark-logo-1.svg" alt=""/></a>
+<a href="index.aspx"><img src="images/dark-logo-1.svg" alt=""></a>
 </div>
 <div class="main_logo" id="logo">
-<a href="index.aspx"><img src="images/logo.svg" alt=""/></a>
-<a href="index.aspx"><img class="logo-inverse" src="images/dark-logo.svg" alt=""/></a>
+<a href="index.aspx"><img src="images/logo.svg" alt=""></a>
+<a href="index.aspx"><img class="logo-inverse" src="images/dark-logo.svg" alt=""></a>
 </div>
 <div class="select_location">
 <div class="ui inline dropdown loc-title">
@@ -312,6 +390,7 @@ Chandigrah
 <a href="my_wallet.aspx" class="item channel_item"><i class="uil uil-usd-circle icon__1"></i>My Wallet</a>
 <a href="my_address.aspx" class="item channel_item"><i class="uil uil-location-point icon__1"></i>My Address</a>
 <a href="offers.aspx" class="item channel_item"><i class="uil uil-gift icon__1"></i>Offers</a>
+<%--<a href="faq.html" class="item channel_item"><i class="uil uil-info-circle icon__1"></i>Faq</a>--%>
 <a href="logout.aspx" class="item channel_item"><i class="uil uil-lock-alt icon__1"></i>Logout</a>
 </div>
 </li>
@@ -344,13 +423,26 @@ Chandigrah
 <a href="request_product.aspx" class="item channel_item page__links">Product Request</a>
 <a href="order_placed.aspx" class="item channel_item page__links">Order Placed</a>
 <a href="bill.aspx" class="item channel_item page__links">Bill Slip</a>
-<a href="login.aspx" class="item channel_item page__links">Log in</a>
-<a href="registration.aspx" class="item channel_item page__links">Registration</a>
-<a href="forgotpassword.aspx" class="item channel_item page__links">Forgot Password</a>
+<a href="login.aspx" class="item channel_item page__links">Sign In</a>
+<a href="registration.aspx" class="item channel_item page__links">Sign Up</a>
+<a href="forgot_password.aspx" class="item channel_item page__links">Forgot Password</a>
 <a href="contactus.aspx" class="item channel_item page__links">Contact Us</a>
 </div>
 </div>
 </li>
+<%--<li class="nav-item">
+<div class="ui icon top left dropdown nav__menu">
+<a class="nav-link" title="Blog">Blog <i class="uil uil-angle-down"></i></a>
+<div class="menu dropdown_page">
+<a href="our_blog.html" class="item channel_item page__links">Our Blog</a>
+<a href="blog_no_sidebar.html" class="item channel_item page__links">Our Blog Two No Sidebar</a>
+<a href="blog_left_sidebar.html" class="item channel_item page__links">Our Blog with Left Sidebar</a>
+<a href="blog_right_sidebar.html" class="item channel_item page__links">Our Blog with Right Sidebar</a>
+<a href="blog_detail_view.html" class="item channel_item page__links">Blog Detail View</a>
+<a href="blog_left_sidebar_single_view.html" class="item channel_item page__links">Blog Detail View with Sidebar</a>
+</div>
+</div>
+</li>--%>
 <li class="nav-item"><a href="contactus.aspx" class="nav-link" title="Contact">Contact Us</a></li>
 </ul>
 </div>
@@ -378,7 +470,7 @@ Chandigrah
 <nav aria-label="breadcrumb">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="index.aspx">Home</a></li>
-<li class="breadcrumb-item active" aria-current="page">Checkout</li>
+<li class="breadcrumb-item active" aria-current="page">Contact Us</li>
 </ol>
 </nav>
 </div>
@@ -388,162 +480,193 @@ Chandigrah
 <div class="all-product-grid">
 <div class="container">
 <div class="row">
-<div class="col-lg-8 col-md-7">
-<div id="checkout_wizard" class="checkout accordion left-chck145">
-<div class="checkout-step">
-<div class="checkout-card" id="headingTwo">
-<span class="checkout-step-number">1</span>
-<h4 class="checkout-step-title">
-<button class="wizard-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Delivery Address</button>
-</h4>
+<div class="col-lg-6 col-md-6">
+<div class="panel-group accordion" id="accordion0">
+<div class="panel panel-default">
+<div class="panel-heading" id="headingOne">
+<div class="panel-title">
+<a class="collapsed" data-toggle="collapse" data-target="#collapseOne" href="#" aria-expanded="false" aria-controls="collapseOne">
+<i class="uil uil-location-point chck_icon"></i>Ludhiana
+</a>
 </div>
-<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#checkout_wizard">
-<div class="checkout-step-body">
-<div class="checout-address-step">
-<div class="row">
-<div class="col-lg-12">
-<div class="">
-<div class="form-group">
 </div>
-<div class="address-fieldset">
-<div class="row">
-<div class="col-lg-6 col-md-12">
-<div class="form-group">
-<label class="control-label">Name*</label>
-<asp:TextBox ID="TextBox1" class="form-control input-md" placeholder="Full Name" runat="server"></asp:TextBox>
+<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion0" style="">
+<div class="panel-body">
+Ludhiana Head Office:<br>
+#0000, St No. 0, Lorem ipsum dolor sit amet, Main road, Ludhiana, Punjab<br>
+Ludhiana- 141001<br>
+<div class="color-pink">Tel: 0000-000-000</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading" id="headingTwo">
+<div class="panel-title">
+<a class="collapsed" data-toggle="collapse" data-target="#collapseTwo" href="#" aria-expanded="false" aria-controls="collapseTwo">
+<i class="uil uil-location-point chck_icon"></i>Gurugram
+</a>
+</div>
+</div>
+<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion0">
+<div class="panel-body">
+Gurugram Branch :<br>
+#0000, St No. 0, Lorem ipsum dolor sit amet, Main road, Gurugram, Haryana<br>
+Gurugram- 141001<br>
+<div class="color-pink">Tel: 0000-000-000</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading" id="headingThree">
+<div class="panel-title">
+<a class="collapsed" data-toggle="collapse" data-target="#collapseThree" href="#" aria-expanded="false" aria-controls="collapseThree">
+<i class="uil uil-location-point chck_icon"></i>New Delhi
+</a>
+</div>
+</div>
+<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion0">
+<div class="panel-body">
+New Delhi Branch :<br/>
+#0000, St No. 0, Lorem ipsum dolor sit amet, Main road, New Delhi<br>
+New Delhi- 141001<br/>
+<div class="color-pink">Tel: 0000-000-000</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading" id="headingfour">
+<div class="panel-title">
+<a class="collapsed" data-toggle="collapse" data-target="#collapsefour" href="#" aria-expanded="false" aria-controls="collapsefour">
+<i class="uil uil-location-point chck_icon"></i>Bangaluru
+</a>
+</div>
+</div>
+<div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour" data-parent="#accordion0">
+<div class="panel-body">
+Bangaluru Branch :<br/>
+#0000, St No. 0, Lorem ipsum dolor sit amet, Main road, Bangaluru<br>
+Bangaluru- 141001<br/>
+<div class="color-pink">Tel: 0000-000-000</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading" id="headingfive">
+<div class="panel-title">
+<a class="collapsed" data-toggle="collapse" data-target="#collapsefive" href="#" aria-expanded="false" aria-controls="collapsefive">
+<i class="uil uil-location-point chck_icon"></i>Mumbai
+</a>
+</div>
+</div>
+<div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive" data-parent="#accordion0">
+<div class="panel-body">
+Mumbai Branch :<br/>
+#0000, St No. 0, Lorem ipsum dolor sit amet, Main road, Mumbai<br>
+Mumbai- 141001<br/>
+<div class="color-pink">Tel: 0000-000-000</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading" id="headingsix">
+<div class="panel-title">
+<a class="collapsed" data-toggle="collapse" data-target="#collapsesix" href="#" aria-expanded="false" aria-controls="collapsesix">
+<i class="uil uil-location-point chck_icon"></i>Hyderabad
+</a>
+</div>
+</div>
+<div id="collapsesix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix" data-parent="#accordion0">
+<div class="panel-body">
+Hyderabad Branch :<br/>
+#0000, St No. 0, Lorem ipsum dolor sit amet, Main road, Hyderabad<br>
+Hyderabad- 141001<br/>
+<div class="color-pink">Tel: 0000-000-000</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading" id="headingseven">
+<div class="panel-title">
+<a class="collapsed" data-toggle="collapse" data-target="#collapseseven" href="#" aria-expanded="false" aria-controls="collapseseven">
+<i class="uil uil-location-point chck_icon"></i>Kolkata
+</a>
+</div>
+</div>
+<div id="collapseseven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingseven" data-parent="#accordion0">
+<div class="panel-body">
+Kolkata Branch :<br/>
+#0000, St No. 0, Lorem ipsum dolor sit amet, Main road, Kolkata<br>
+Kolkata- 141001<br/>
+<div class="color-pink">Tel: 0000-000-000</div>
+</div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading" id="headingeight">
+<div class="panel-title">
+<a class="collapsed" data-toggle="collapse" data-target="#collapseeight" href="#" aria-expanded="false" aria-controls="collapseeight">
+<i class="uil uil-location-point chck_icon"></i>Chandigrah
+</a>
+</div>
+</div>
+<div id="collapseeight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingeight" data-parent="#accordion0">
+<div class="panel-body">
+Chandigrah Branch :<br/>
+#0000, St No. 0, Lorem ipsum dolor sit amet, Main road, Chandigrah<br/>
+Chandigrah- 141001<br/>
+<div class="color-pink">Tel: 0000-000-000</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="contact-title">
+<h2>Submit customer service request</h2>
+<p>If you have a question about our service or have an issue to report, please send a request and we will get back to you as soon as possible.</p>
+</div>
+<div class="contact-form">
+<form runat="server">
+<div class="form-group mt-1">
+<label class="control-label">Full Name*</label>
+<div class="ui search focus">
+<div class="ui left icon input swdh11 swdh19">
+<%--<input class="prompt srch_explore" type="text" name="sendername" id="sendername" required="" placeholder="Your Full"/>--%>
+<asp:TextBox ID="TextBox1" class="prompt srch_explore" placeholder="Your Full Name" runat="server"></asp:TextBox>
 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Name is required!" ForeColor="Red"></asp:RequiredFieldValidator>
 </div>
 </div>
-<div class="col-lg-6 col-md-12">
-<div class="form-group">
+</div>
+<div class="form-group mt-1">
 <label class="control-label">Email Address*</label>
-<asp:TextBox ID="TextBox2" class="form-control input-md" placeholder="Email Address" runat="server"></asp:TextBox>
-<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Email is required!" ForeColor="Red"></asp:RequiredFieldValidator>
-</div>
-</div>
-<div class="col-lg-12 col-md-12">
-<div class="form-group">
-<label class="control-label">Flat / House / Office No.*</label>
-<asp:TextBox ID="TextBox3" class="form-control input-md" placeholder="Address" runat="server"></asp:TextBox>
-<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Address is required!" ForeColor="Red"></asp:RequiredFieldValidator>
-</div>
-</div>
-<div class="col-lg-12 col-md-12">
-<div class="form-group">
-<label class="control-label">Street / Society / Office Name*</label>
-<asp:TextBox ID="TextBox4" class="form-control input-md" placeholder="Street Address" runat="server"></asp:TextBox>
-<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="Street Address is required!" ForeColor="Red"></asp:RequiredFieldValidator>
-</div>
-</div>
-<div class="col-lg-6 col-md-12">
-<div class="form-group">
-<label class="control-label">Pincode*</label>
-<asp:TextBox ID="TextBox5" class="form-control input-md" placeholder="Pincode" runat="server"></asp:TextBox>
-<asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox5" ErrorMessage="Pincode is required!" ForeColor="Red"></asp:RequiredFieldValidator>
-</div>
-</div>
-<div class="col-lg-6 col-md-12">
-<div class="form-group">
-<label class="control-label">Land Mark*</label>
-<asp:TextBox ID="TextBox6" class="form-control input-md" placeholder="Land Mark" runat="server"></asp:TextBox>
-<asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox6" ErrorMessage="Land Mark is required!" ForeColor="Red"></asp:RequiredFieldValidator>
+<div class="ui search focus">
+<div class="ui left icon input swdh11 swdh19">
+<%--<input class="prompt srch_explore" type="email" name="emailaddress" id="emailaddress" required="" placeholder="Your Email Address"/>--%>
+<asp:TextBox ID="TextBox2" class="prompt srch_explore" placeholder="Your Email Address" runat="server"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Email is required!" ForeColor="Red"></asp:RequiredFieldValidator>
 </div>
 </div>
 </div>
+<div class="form-group mt-1">
+<label class="control-label">Subject*</label>
+<div class="ui search focus">
+<div class="ui left icon input swdh11 swdh19">
+<asp:TextBox ID="TextBox3" class="prompt srch_explore" placeholder="Subject" runat="server"></asp:TextBox>
+<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="Name is required!" ForeColor="Red"></asp:RequiredFieldValidator>
 </div>
 </div>
 </div>
+<div class="form-group mt-1">
+<div class="field">
+<label class="control-label">FeedBack*</label>
+<asp:TextBox ID="TextBox4" TextMode="MultiLine" class="form-control" rows="3" placeholder="Write Feedback" runat="server"></asp:TextBox>
+<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox1" ErrorMessage="Feedback is required!" ForeColor="Red"></asp:RequiredFieldValidator>
+</div>    
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="checkout-step">
-<div class="checkout-card" id="headingFour">
-<span class="checkout-step-number">2</span>
-<h4 class="checkout-step-title">
-<button class="wizard-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Payment</button>
-</h4>
-</div>
-<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#checkout_wizard">
-<div class="checkout-step-body">
-<div class="payment_method-checkout">
-<div class="row">
-<div class="col-md-12">
-<div class="rpt100">
-<ul class="radio--group-inline-container_1">
-<li>
-<div class="radio-item_1">
-<asp:RadioButton ID="cashondelivery1" value="cashondelivery" Selected="True" runat="server" />
-<label for="cashondelivery1" class="radio-label_1">Cash on Delivery</label>
-</div>
-</li>
-</ul>
-</div>
-<div class="form-group return-departure-dts" data-method="cashondelivery">
-<div class="row">
-<div class="col-lg-12">
-<div class="pymnt_title">
-<h4>Cash on Delivery</h4>
-<p>Cash on Delivery will not be available if your order value exceeds $10.</p>
-</div>
-</div>
-</div>
-</div>
-<asp:Button ID="Button1" class="next-btn16 hover-btn" runat="server" Text="Place Order" OnClick="order_Click" />
-<asp:Label ID="Label2" runat="server" Text=""></asp:Label>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-5">
-<div class="pdpt-bg mt-0">
-<div class="pdpt-title">
-<h4>Order Summary</h4>
-</div>
-<div class="right-cart-dt-body">
-<div class="cart-item border_radius">
-<div class="cart-product-img">
-<img src="images/product/img-11.jpg" alt=""/>
-<div class="offer-badge">4% OFF</div>
-</div>
-<div class="cart-text">
-<h4>Product Title Here</h4>
-<div class="cart-item-price">$15 <span>$18</span></div>
-<button type="button" class="cart-close-btn"><i class="uil uil-multiply"></i></button>
- </div>
-</div>
-</div>
-<div class="total-checkout-group">
-<div class="cart-total-dil">
-<h4>Gambo Super Market</h4>
-<span>$15</span>
-</div>
-<div class="cart-total-dil pt-3">
-<h4>Delivery Charges</h4>
-<span>$1</span>
-</div>
-</div>
-<div class="cart-total-dil saving-total ">
-<h4>Total Saving</h4>
-<span>$3</span>
-</div>
-<div class="main-total-cart">
-<h2>Total</h2>
-<span>$<asp:Label ID="Label1" runat="server" Text="Label">16</asp:Label></span>
-</div>
-<div class="payment-secure">
-<i class="uil uil-padlock"></i>Secure checkout
-</div>
-</div>
-<div class="checkout-safety-alerts">
-<p><i class="uil uil-sync"></i>100% Replacement Guarantee</p>
-<p><i class="uil uil-check-square"></i>100% Genuine Products</p>
-<p><i class="uil uil-shield-check"></i>Secure Payments</p>
+<asp:Button ID="Button1" class="next-btn16 hover-btn mt-3" runat="server" Text="Submit Feedback" OnClick="contact_click" />
+<br />
+<asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+</form>
 </div>
 </div>
 </div>
@@ -559,7 +682,7 @@ Chandigrah
 <div class="col-md-6 col-sm-6">
 <ul class="call-email-alt">
 <li><a href="#" class="callemail"><i class="uil uil-dialpad-alt"></i>1800-000-000</a></li>
-<li><a href="#" class="callemail"><i class="uil uil-envelope-alt"></i><span class="__cf_email__" data-cfemail="6d04030b022d0a0c000f021e181d081f000c1f060819430e0200">[email&#160;protected]</span></a></li>
+<li><a href="#" class="callemail"><i class="uil uil-envelope-alt"></i><span class="__cf_email__" data-cfemail="0f666169604f686e626d607c7a7f6a7d626e7d646a7b216c6062">[email&#160;protected]</span></a></li>
 </ul>
 </div>
 <div class="col-md-6 col-sm-6">
@@ -586,6 +709,7 @@ Chandigrah
 <ul>
 <li><a href="#">Fruits and Vegetables</a></li>
 <li><a href="#">Noodles & Sauces</a></li>
+<li><a href="#">Meat & Seafood</a></li>
 <li><a href="#">Electronics</a></li>
 </ul>
 </div>
@@ -597,6 +721,7 @@ Chandigrah
 <li><a href="about_us.aspx">About US</a></li>
 <li><a href="shop_grid.aspx">Featured Products</a></li>
 <li><a href="offers.aspx">Offers</a></li>
+
 <li><a href="contactus.aspx">Contact Us</a></li>
 </ul>
 </div>
@@ -620,8 +745,8 @@ Chandigrah
 <div class="second-row-item-app">
 <h4>Download App</h4>
 <ul>
-<li><a href="#"><img class="download-btn" src="images/download-1.svg" alt="" /></a></li>
-<li><a href="#"><img class="download-btn" src="images/download-2.svg" alt="" /></a></li>
+<li><a href="#"><img class="download-btn" src="images/download-1.svg" alt=""/></a></li>
+<li><a href="#"><img class="download-btn" src="images/download-2.svg" alt=""/></a></li>
 </ul>
 </div>
 <div class="second-row-item-payment">
@@ -656,7 +781,7 @@ Chandigrah
 <div class="col-md-12">
 <div class="footer-bottom-links">
 <ul>
-<li><a href="about_us.aspx">About</a></li>
+ <li><a href="about_us.aspx">About</a></li>
 <li><a href="contactus.aspx">Contact</a></li>
 <li><a href="privacy_policy.aspx">Privacy Policy</a></li>
 <li><a href="terms_and_conditions.aspx">Term & Conditions</a></li>
@@ -671,7 +796,8 @@ Chandigrah
 </div>
 </div>
 </footer>
-</form>
+
+
 <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery-3.3.1.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/OwlCarousel/owl.carousel.js"></script>

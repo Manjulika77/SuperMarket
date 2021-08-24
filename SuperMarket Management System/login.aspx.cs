@@ -40,7 +40,7 @@ namespace SuperMarket_Management_System
                     {
                         Session["id"] = dr["id"].ToString();
                         Session["name"] = dr["name"].ToString();
-                        Session["email"] = dr["name"].ToString();
+                        Session["email"] = dr["email"].ToString();
                         Session["phone"] = dr["phone"].ToString();
                     }
                     if (dr != null)
